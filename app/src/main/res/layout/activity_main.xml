@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:backgroundTint="@android:color/holo_blue_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Break the Code"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:height="125dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#283b73"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NON-PROFIT PARTNERS"
+        android:id="@+id/nonProfitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sponsors"
+        android:id="@+id/sponsorsButton"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_above="@+id/nonProfitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        android:id="@+id/enrollButton"
+        android:layout_above="@+id/sponsorsButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is Break the Code?"
+        android:id="@+id/infoLabel"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3a53a4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/infoLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/enrollButton">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supporting women in tech has always been a top priority for Epicodus. Since our first class, our student body has been about one-third women. But we want to do more, and we know that many other Portland tech companies do, too. That’s why we’re launching Break the Code, an initiative designed to empower more women to join the tech industry.  Through partnerships with Portland-based tech companies and women-focused nonprofit organizations, Epicodus wants to help start a productive dialogue and create a more supportive environment for women choosing careers in programming. "
+            android:id="@+id/textView2"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+    </ScrollView>
+
+</RelativeLayout>
